@@ -1,19 +1,29 @@
-# React/JavaScript: Security and Identity Management
+# Netlify/React: Starter Cloud template
 
-Visit the ["React/JavaScript Code Samples: App Security in Action"](https://auth0.com/developers/hub/code-samples/spa/react-javascript) section of the ["Auth0 Developer Hub"](https://auth0.com/developers/hub) to explore how you can secure React applications written in JavaScript by implementing user authentication with Auth0.
+This template demonstrates how to deploy a React Single-Page Application (SPA) to Netlify. This React code sample builds the API server using the React Router 6 library.
 
-[![React/JavaScript Code Samples: App Security in Action](https://cdn.auth0.com/blog/hub/code-samples/spa/react-javascript.png)](https://auth0.com/developers/hub/code-samples/spa/react-javascript)
-  
-## Basic User Authentication Code Sample
-
-This JavaScript code sample demonstrates **how to implement user authentication** in React applications using Auth0.
-
-Visit the ["React/JavaScript Code Sample: User Authentication For Basic Apps"](https://auth0.com/developers/hub/code-samples/spa/react-javascript/basic-authentication) page for instructions on how to configure and run this code sample and how to integrate it with an API server of your choice to [create a full-stack code sample](https://auth0.com//developers/hub/code-samples/full-stack/hello-world/basic-access-control/spa).
-
-[![React/JavaScript Code Sample: User Authentication For Basic Apps](https://cdn.auth0.com/blog/hub/code-samples/spa/react-javascript/basic-authentication.png)](https://auth0.com/developers/hub/code-samples/spa/react-javascript/basic-authentication)
-
-
+Visit the ["Netlify Security: Developer Guides"](https://developer.auth0.com/resources/guides/cloud/netlify) section of the ["Auth0 Developer Resources"](https://developer.auth0.com/resources) to explore how you can deploy secured applications with Auth0 to Netlify.
 
 ## Why Use Auth0?
 
-Auth0 is a flexible drop-in solution to add authentication and authorization services to your applications. Your team and organization can avoid the cost, time, and risk that come with building your own solution to authenticate and authorize users. We offer tons of guidance and SDKs for you to get started and [integrate Auth0 into your stack easily](https://auth0.com/developers/hub/code-samples/full-stack).
+Auth0 is a flexible drop-in solution to add authentication and authorization services to your applications. Your team and organization can avoid the cost, time, and risk that come with building your own solution to authenticate and authorize users. We offer tons of guidance and SDKs for you to get started and [integrate Auth0 into your stack easily](https://developer.auth0.com/resources/code-samples/full-stack).
+
+## Set Up and Run the React Project
+
+Install the project dependencies:
+
+```bash
+npm install
+```
+
+For simplicity and convenience, the starter React consumes data from a message service to hydrate the user interface.
+
+Execute this command to run your React application:
+
+```bash
+npm run dev
+```
+
+Visit [`http://localhost:8888/`](http://localhost:8888/) to access the starter application.
+
+In the starter project, all the starter React application routes are public. However, you can use Auth0 to get an ID token to hydrate the user profile information present on the `/profile` page with information from a real user. With Auth0, you can also get an access token to make a secure call to an external API to hydrate the messages present in the `/protected` and `/admin` pages.
